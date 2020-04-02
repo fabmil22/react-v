@@ -1,7 +1,7 @@
-
+@import './Variables.scss';
 .footer {
     align-items: center;
-    background-color: #8f57fd;
+    background-color: $base_fondo;
     display: flex;
     height: 100px;
     width: 100%;

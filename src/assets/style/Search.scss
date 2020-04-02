@@ -1,4 +1,4 @@
-
+@import './Variables.scss';
 .main {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     border: 2px solid white;
     border-radius: 25px;
     color: white;
-    font-family: 'Muli', sans-serif;
+    font-family: $theme_font;
     font-size: 16px;
     height: 50px;
     margin-bottom: 20px;

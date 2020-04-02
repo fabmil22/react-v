@@ -1,9 +1,11 @@
+@import './Variables.scss';
 .categories__title {
-    background: #8f57fd;
+    background: $base_fondo;
     color: white;
     font-size: 16px;
-    margin-top: -16px;
+    margin-top: -33px;
     position: absolute;
     padding-left: 30px;
     width: 100%;
   }
+  

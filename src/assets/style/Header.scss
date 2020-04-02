@@ -1,7 +1,7 @@
-
+@import './Variables.scss';
 .header {
     align-items: center;
-    background: #8f57fd;
+    background: $base_fondo;
     color: white;
     display: flex;
     height: 100px;

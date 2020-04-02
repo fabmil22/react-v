@@ -36,7 +36,11 @@ module.exports = {
                 loader : MiniCssExtractPluin.loader,
                 },
                 'css-loader',
-                'sass-loader'
+                'sass-loader',
+                {
+                    loader: "resolve-url-loader",
+                    options: {}
+                  }
         ]
            },
            {

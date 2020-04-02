@@ -1,7 +1,7 @@
-
+@import './Variables.scss';
 .header {
     align-items: center;
-    background: #8f57fd;
+    background: $base_fondo;
     color: white;
     display: flex;
     height: 100px;
@@ -72,7 +72,7 @@
   }
   
   .categories__title {
-    background: #8f57fd;
+    background: $base_fondo;
     color: white;
     font-size: 16px;
     margin-top: -16px;
