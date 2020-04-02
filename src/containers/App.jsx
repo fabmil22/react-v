@@ -9,7 +9,13 @@ import '../assets/style/App.scss';
 
 const App = () => {
 
-   const [ videos , setVideos] = useState([]);
+   const [ videos , setVideos] = useState({
+    mylist: [],
+    trends: [],
+    originals: [],
+   }
+       
+   );
 
    useEffect(() => {
        
@@ -18,36 +24,40 @@ const App = () => {
     .then( data => setVideos(data))
     }, [] );
 
-console.log(videos);
+
 
     return ( 
         <div  className="App">
         <Header />
         <Search />
-        <Categorias title="Nuevos">
+        {
+            videos.mylist?.length > 0 && 
+            <Categorias title="Nuevos">
             <Carrusel>
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
+                <ItemCarrusel  lista={videos.trends} />
             </Carrusel>
-        </Categorias>
-        <Categorias title="Mas Visualizados">
+            </Categorias>
+        }
+       
+            <Categorias title="tendencias">
             <Carrusel>
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
+                { videos.trends.map(item =>
+                    <ItemCarrusel  key={item.id} {...item} />
+                    )}
+                
             </Carrusel>
-        </Categorias>
-        <Categorias title="Recomendados">
+            </Categorias>
+        
+            <Categorias title="tendencias">
             <Carrusel>
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
-                <ItemCarrusel />
+                { videos.originals.map(item =>
+                    <ItemCarrusel  key={item.id} {...item} />
+                    )}
+                
             </Carrusel>
-        </Categorias>
+            </Categorias>
+
+       
         <Footer/>
         </div>
      );
