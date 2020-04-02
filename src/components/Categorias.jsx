@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/style/Carrusel.scss';
+import '../assets/style/Categorias.scss';
 
 const Categorias = ({children}) => {
     return ( 
