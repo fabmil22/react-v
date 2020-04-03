@@ -5,9 +5,9 @@ import Categorias from '../components/Categorias';
 import Carrusel from '../components/Carrusel';
 import ItemCarrusel from '../components/ItemCarrusel';
 import Footer from '../components/Footer';
-import '../assets/style/App.scss';
+import '../assets/style/Home.scss';
 
-const App = () => {
+const Home = () => {
 
    const [ videos , setVideos] = useState({
     mylist: [],
@@ -27,8 +27,8 @@ const App = () => {
 
 
     return ( 
-        <div  className="App">
-        <Header />
+        <React.Fragment>
+  
         <Search />
         {
             videos.mylist?.length > 0 && 
@@ -58,9 +58,9 @@ const App = () => {
             </Categorias>
 
        
-        <Footer/>
-        </div>
+       
+        </React.Fragment>
      );
 }
  
-export default App;
+export default Home;
