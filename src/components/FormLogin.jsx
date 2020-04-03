@@ -1,7 +1,7 @@
 import React from 'react'
 import iconGoogle  from'../assets/img/google-icon.png';
 import iconTwitter  from'../assets/img/twitter-icon.png';
-
+import { Link } from 'react-router-dom';
 const FormLogin = () => {
     return (
     <section className="login">
@@ -22,7 +22,7 @@ const FormLogin = () => {
                 <div><img src={iconGoogle} /> Inicia sesión con Google</div>
                 <div><img src={iconTwitter} /> Inicia sesión con Twitter</div>
             </section>
-            <p className="login__container--register">No tienes ninguna cuenta <a href="">Regístrate</a></p>
+            <p className="login__container--register">No tienes ninguna cuenta <Link to="register"><a href="">Regístrate</a></Link></p>
         </section>
   </section>
     )

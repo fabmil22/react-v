@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import '../assets/style/register/general.scss';
 import Header_login from '../components/Header_login';
@@ -16,7 +16,7 @@ export default function resgister() {
             <input className="input" type="password" placeholder="Contraseña"/>
             <button className="button">Registrarme</button>
         </form>
-        <a href="">Iniciar sesión</a>
+        <Link  to="login"><a >Iniciar sesión</a></Link>
         </section>
   </section>
   
