@@ -11,7 +11,7 @@ const ItemCarrusel = ( {cover , title , year , contentRating , duration}) => {
             <img className="carousel-item__details--img" src={plusIcon} alt="Plus Icon"/> 
           </div>
     <p className="carousel-item__details--title">{title}</p>
-    <p className="carousel-item__details--subtitle">{year}+{duration}</p>
+    <p className="carousel-item__details--subtitle">{year} {duration} {contentRating}</p>
         </div>
       </div>
      );
