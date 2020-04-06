@@ -25,12 +25,17 @@ const ItemCarrusel = (props) => {
               /> 
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <p className="carousel-item__details--title">{title}</p>
     <p className="carousel-item__details--subtitle">{year} {duration} {contentRating}</p>
 =======
         <p className="carousel-item__details--title">{title}</p>
         <p className="carousel-item__details--subtitle">{year}+{duration}</p>
 >>>>>>> f26e5181b2accb538b44587781c8a94630038e78
+=======
+        <p className="carousel-item__details--title">{title}</p>
+        <p className="carousel-item__details--subtitle">{year}+{duration}</p>
+>>>>>>> master
         </div>
       </div>
      );
